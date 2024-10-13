@@ -1,4 +1,4 @@
-// Define the Employeeinfo function
+// Eric Kopy- EmployeeTask
 function Employeeinfo(name, salary) {
     console.log("Employee Name: " + name);
     console.log("Employee Salary: $" + salary);
