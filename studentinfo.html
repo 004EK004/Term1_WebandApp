@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Student Enrollment Form</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Details</h1>
+    <form action="/submit-data" method="post">
+        First Name: <input name="firstName" type="text" required /><br/><br/>
+        Last Name: <input name="lastName" type="text" required /><br/><br/>
+        Email: <input type="email" id="emailid" name="email" required /><br/><br/>
+        Age: <input name="myAge" type="text" required /><br/><br/>
+        
+        <p>Please select your gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br/><br/>
+
+        <p>Qualifications</p>
+        <input type="checkbox" name="Qual" value="GCSE"> GCSE <br/>
+        <input type="checkbox" name="Qual" value="A-level"> A-Level <br/>
+        <input type="checkbox" name="Qual" value="Higher National Certificate"> Higher National Certificate/Level 4 <br/>
+        <input type="checkbox" name="Qual" value="HND"> Foundation Degree/HND/DipHE/Level 5 <br/>
+        <input type="checkbox" name="Qual" value="B.Sc"> Bachelor Degree/Graduate Diploma or Certificate/Level 6 <br/>
+        <input type="checkbox" name="Qual" value="Master Degree"> Master Degree/PGCE/Level 7 <br/>
+        <input type="checkbox" name="Qual" value="PhD"> PhD/Level 8 <br/><br/>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+</html>
